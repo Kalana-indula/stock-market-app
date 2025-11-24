@@ -77,4 +77,4 @@ const UserDropDown = () => {
         </DropdownMenu>
     )
 }
-export default UserDropDown
+export default UserDropDown;
