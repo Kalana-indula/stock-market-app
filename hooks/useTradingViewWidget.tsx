@@ -2,6 +2,11 @@
 
 import React, {useEffect, useRef} from 'react'
 
+/**
+ * Injects the TradingView script into a container once and returns a ref
+ * so consumers can mount the widget without duplicating setup logic.
+ */
+
 const useTradingViewWidget = (scriptUrl: string, config: Record<string, unknown>, height = 600) => {
     const containerRef = useRef<HTMLDivElement | null>(null);
 

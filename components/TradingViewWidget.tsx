@@ -13,6 +13,7 @@ interface TradingViewWidgetProps {
 }
 
 const TradingViewWidget = ({ title, scriptUrl, config, height = 600, className }: TradingViewWidgetProps) => {
+    // Renders the TradingView embed with an optional title, delegating script loading to the hook.
     const containerRef = useTradingViewWidget(scriptUrl, config, height);
 
     return (
